@@ -48,9 +48,9 @@ pipeline {
             steps {
                 script {
                     // Stop and remove the old container if it exists
-                    sh 'docker stop myapp || true && docker rm myapp || true'
+                    sh 'docker stop mycon || true && docker rm mycon || true'
                     // Run the new container
-                    sh 'docker run -d --name myapp -p 8121:8121 $DOCKER_IMAGE'
+                    sh 'docker run -d --name mycon -p $DOCKER_IMAGE'
                 }
             }
         }
@@ -61,3 +61,4 @@ pipeline {
         }
     }
 }
+
