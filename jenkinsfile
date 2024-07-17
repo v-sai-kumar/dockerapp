@@ -50,7 +50,7 @@ pipeline {
                     // Stop and remove the old container if it exists
                     sh 'docker stop myapp || true && docker rm myapp || true'
                     // Run the new container
-                    sh 'docker run -d --name myapp -p 8080:9121 $DOCKER_IMAGE'
+                    sh 'docker run -d --name myapp -p 9398:9121 $DOCKER_IMAGE'
                 }
             }
         }
