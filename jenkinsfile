@@ -55,4 +55,9 @@ pipeline {
             }
         }
     }
+     post {
+        always {
+            cleanWs() // Clean workspace after the build to reduce storage issue
+        }
+    }
 }
