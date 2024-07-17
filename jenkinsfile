@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDENTIALS = 'gitid' // ID of Docker Hub credentials stored in Jenkins
-        DOCKER_IMAGE = 'Sai1421/java:latest' // Replace with your Docker Hub username and image name
+        DOCKER_IMAGE = 'sai1421/java:latest' // Replace with your Docker Hub username and image name
     }
 
     stages {
